@@ -1,4 +1,4 @@
-﻿namespace TravelNTourism.Data
+﻿namespace TravelNTourism.Model.Dto
 {
     public class GuideDto
     {

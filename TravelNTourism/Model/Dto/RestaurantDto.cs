@@ -17,5 +17,12 @@
         public string SubHeaderName { get; set; }
         public string Price { get; set; }
         public string HasMoreInfo { get; set; }
+        public string Area { get; set; }
+        public string Room1ImgUrl { get; set; }
+        public string Room2mgUrl { get; set; }
+        public string Room3mgUrl { get; set; }
+        public string Room4ImgUrl { get; set; }
+        public string Room5mgUrl { get; set; }
+        public string Room6mgUrl { get; set; }
     }
 }

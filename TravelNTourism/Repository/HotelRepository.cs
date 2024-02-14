@@ -30,6 +30,12 @@ namespace TravelNTourism.Repository
                 objFromDb.SubHeaderName = entity.SubHeaderName;
                 objFromDb.Price = entity.Price;
                 objFromDb.HasMoreInfo = entity.HasMoreInfo;
+                objFromDb.Room1ImgUrl = entity.Room1ImgUrl;
+                objFromDb.Room2mgUrl = entity.Room2mgUrl;
+                objFromDb.Room3mgUrl = entity.Room3mgUrl;
+                objFromDb.Room4ImgUrl = entity.Room4ImgUrl;
+                objFromDb.Room5mgUrl = entity.Room5mgUrl;
+                objFromDb.Room1ImgUrl = entity.Room6mgUrl;
                 //_db.Restaurants.Update(objFromDb);
                 //await _db.SaveChangesAsync();
             }

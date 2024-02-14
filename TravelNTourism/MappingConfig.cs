@@ -13,14 +13,26 @@ namespace TravelNTourism
             CreateMap<Restaurant, RestaurantDto>().ReverseMap();
 
             CreateMap<Restaurant, RestaurantUpdateDto>();
-            CreateMap<Restaurant, RestaurantUpdateDto>().ReverseMap();
-
+            CreateMap<Restaurant, RestaurantUpdateDto>().ReverseMap(); 
 
             CreateMap<Guide, GuideDto>();
             CreateMap<Guide, GuideDto>().ReverseMap();
 
             CreateMap<Restaurant, GuideUpdateDto>();
             CreateMap<Restaurant, GuideUpdateDto>().ReverseMap();
+
+            CreateMap<Vehicle, VehicleDto>();
+            CreateMap<Vehicle, VehicleDto>().ReverseMap(); 
+
+            CreateMap<Vehicle, VehicleUpdateDto>();
+            CreateMap<Vehicle, VehicleUpdateDto>().ReverseMap();
+
+            CreateMap<Booking, BookingDto>();
+            CreateMap<Booking, BookingDto>().ReverseMap();
+
+            CreateMap<Booking, BookingUpdateDto>();
+            CreateMap<Booking, BookingUpdateDto>().ReverseMap();
+
             CreateMap<ApplicationUser, UserDTO>().ReverseMap();
         }
     }
