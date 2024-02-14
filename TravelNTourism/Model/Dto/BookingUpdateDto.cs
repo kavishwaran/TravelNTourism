@@ -14,7 +14,8 @@
         public int CustomerId { get; set; }    
         public int RoomId { get; set; }   
         public int VehicleId { get; set; }   
-        public int GuideId { get; set; }   
+        public int GuideId { get; set; }
+        public string UserId { get; set; }
 
     }
 }

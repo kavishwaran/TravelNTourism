@@ -33,6 +33,13 @@ namespace TravelNTourism
             CreateMap<Booking, BookingUpdateDto>();
             CreateMap<Booking, BookingUpdateDto>().ReverseMap();
 
+            CreateMap<Payment, PaymentDto>();
+            CreateMap<Payment, PaymentDto>().ReverseMap();
+
+            CreateMap<Payment, PaymentUpdateDto>();
+            CreateMap<Payment, PaymentUpdateDto>().ReverseMap();
+
+
             CreateMap<ApplicationUser, UserDTO>().ReverseMap();
         }
     }

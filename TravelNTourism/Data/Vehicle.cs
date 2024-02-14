@@ -9,5 +9,6 @@
         public string Color { get; set; }
         public double Price { get; set; }
         public string IsActive { get; set; }
+        public string UserId { get; set; }
     }
 }
