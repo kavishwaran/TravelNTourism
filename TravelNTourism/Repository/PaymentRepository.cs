@@ -13,6 +13,8 @@ namespace TravelNTourism.Repository
             _db = db;
         }
        
+
+        //Update Payments
         public async void UpdateAsync(PaymentUpdateDto entity)
         {
             var objFromDb = _db.Payments.FirstOrDefault(a => a.Id == entity.Id);
@@ -29,7 +31,6 @@ namespace TravelNTourism.Repository
                 objFromDb.CardNo = entity.CardNo;
                 objFromDb.BankName = entity.BankName;
                 objFromDb.NameOnCard = entity.NameOnCard;
-
             }
 
         }
@@ -40,6 +41,8 @@ namespace TravelNTourism.Repository
             { 
                 objFromDb.IsActive = "N"; 
             }
+
+
             //_db.Restaurants.Update(objFromDb);
             //await _db.SaveChangesAsync();
         }
