@@ -48,6 +48,8 @@ namespace TravelNTourism.Repository
             { 
                 objFromDb.IsActive = "N"; 
             }
+
+
             //_db.Restaurants.Update(objFromDb);
             //await _db.SaveChangesAsync();
         }

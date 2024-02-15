@@ -13,8 +13,7 @@ using TravelNTourism.Repository;
 using TravelNTourism.Repository.IRepository;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
+ 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -27,8 +26,7 @@ builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
 builder.Services.AddScoped<IBookingRepository, BookingRepository>();
 builder.Services.AddScoped<IPaymentRepository, PaymentRepository>();
 builder.Services.AddAutoMapper(typeof(MappingConfig));
-
-// JWT Authentication
+ 
 var key = builder.Configuration.GetValue<string>("APISettings:Secret");
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
@@ -43,15 +41,13 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateAudience = false
         };
     });
-
-// API Versioning
+ 
 builder.Services.AddApiVersioning(options =>
 {
     options.AssumeDefaultVersionWhenUnspecified = true;
     options.DefaultApiVersion = new ApiVersion(1, 0);
 });
-
-// Swagger
+ 
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "TravelNTourism", Version = "v1" });
